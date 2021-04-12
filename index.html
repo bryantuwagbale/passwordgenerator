@@ -25,13 +25,26 @@
           
         </div>
             <form id="passwordGeneratorForm" class="form">
-
               <input type="text" name="" placeholder="Create Password" id="password" readonly="">
+              <label for="">Number of Characters</label>
               
+              <input type="range" min="8" max="128" id="range" value="8"> 
+              <input type="number" min="8" max="128" id="number" value="8">
+
+              <label for="uppercase">Include Uppercase</label>
+              <input type="checkbox" id="uppercase">
+
+              <label for="numbers">Include Numbers</label>
+              <input type="checkbox" id="numbers">
+
+              <label for="symbols">Include Symbols</label>
+              <input type="checkbox" id="symbols">
+
+
             </form>
         </div>
         <div class="card-footer">
-          <button onclick="getPassword()" id="generate" class="btn">Generate Password</button>
+          <button type="submit" onclick="getPassword()" id="generate" class="btn">Generate Password</button>
         </div>
       </div>
     </div>
